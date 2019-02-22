@@ -1,0 +1,11 @@
+h1{
+    font-family: sans-serif;
+    color:crimson;
+    font-weight: bond;
+}
+h3{
+    color:blue
+}
+li{
+    list-style-type: lower-alpha;
+}

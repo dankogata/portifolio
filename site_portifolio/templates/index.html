@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'script.js' %}"></script>
+</head>
+<body>
+    <h1>meu portifolio</h1>
+    <!-- <h2>Meu nome é {{ nome }}</h2>
+    <h3>meus conhecimentos:</h3>
+    <ul>
+        {% for item in conhecimentos %}
+            <li>{{ item }}</li> 
+        {% endfor %}
+    </ul>
+    
+    <h3>endereço</h3>
+    <ul>
+        <li>cidade: São Paulo</li>
+        <li>Pais: Brasil</li>
+        <li>Planeta: terra</li>
+    </ul> -->
+    <h2>Meu nome é {{ eu.nome }}</h2>
+    <p>Minha altura é {{ eu.altura}}</p>
+    <ul>
+        {% for conhecimento in eu.conhecimento %}
+            <li>{{ conhecimento }}</li>
+            {% endfor %}
+    </ul>
+    <!-- <h3>endereço</h3>                          ARRUMAR
+    <p>cidade : {{ eu.endereco.cidade }}</p>            NÃO ESTÁ  CARREGANDO
+    <p>Pais: {{ eu.endereco.pais }}</p> -->             
+</body>
+</html>
